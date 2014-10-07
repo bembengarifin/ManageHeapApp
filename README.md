@@ -9,12 +9,19 @@ Example of the procdump command:
 procdump.exe -e -h -m 1000 -ma -t -s 1 -x dumps ManagedHeapApp.exe
 
 -e	Write a dump when the process encounters an unhandled exception. Include the 1 to create dump on first chance exceptions.
+
 -h	Write dump if process has a hung window (does not respond to window messages for at least 5 seconds).
+
 -m	Memory commit threshold in MB at which to create a dump.
+
 -ma	Write a dump file with all process memory. The default dump format only includes thread and handle information.
+
 -t	Write a dump when the process terminates
+
 -s	Consecutive seconds before dump is written (default is 10).
+
 -x	Launch the specified image with optional arguments. If it is a Store Application or Package, ProcDump will start on the next activation (only).
+
 
 Some useful info:
 http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx
